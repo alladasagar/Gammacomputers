@@ -95,3 +95,12 @@ img {
 .animate-right.active {
     transform: translateX(0);
 }
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 10px 5%;
+    }
+    .head-1 {
+        margin-top: 25vh; /* Adjust as needed for smaller screens */
+    }
+    /* Additional responsive styles */
+}
