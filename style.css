@@ -79,12 +79,12 @@ img {
 }
 /* Initial positioning before animation */
 .animate-left {
-    transform: translateX(-100%);
+    transform: translateX(-100vw);
     transition: transform 1.5s ease;
 }
 
 .animate-right {
-    transform: translateX(100%);
+    transform: translateX(100vw);
     transition: transform 1.5s ease;
 }
 
