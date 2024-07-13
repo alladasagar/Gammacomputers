@@ -3,12 +3,12 @@ window.addEventListener('scroll', function() {
 });
 
 function reveal() {
-    var reveals = document.querySelectorAll('.animate-left, .animate-right , .reveal');
+    var reveals = document.querySelectorAll('.reveal');
     var windowHeight = window.innerHeight;
 
     reveals.forEach(function(reveal) {
         var revealTop = reveal.getBoundingClientRect().top;
-        var revealPoint = windowHeight - 100; // Adjust this value as needed
+        var revealPoint = windowHeight - 10; 
 
         if (revealTop < revealPoint) {
             reveal.classList.add('active');
