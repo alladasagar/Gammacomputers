@@ -33,11 +33,15 @@ img {
     border-radius: 10px;
 }
 .card img{
-    height: 160px;
-    width: 220px;
+    width: 100%;
+    height: auto;
 }
 
+/* Adjust card size for smaller screens */
 @media screen and (max-width: 768px) {
+    .card img{
+        height: auto;
+    }
     .header {
         padding: 10px 5%; 
     }
