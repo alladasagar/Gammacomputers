@@ -11,10 +11,9 @@
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(background.webp);
     background-size: cover;
     background-position: center;
-    padding: 10px 8%; /* Consider using percentage padding for better responsiveness */
+    padding: 10px 8%; 
     position: relative;
 }
-
 .navbar-nav a:hover {
     color: #42f5ec !important;
 }
@@ -33,11 +32,14 @@ img {
     height: auto;
     border-radius: 10px;
 }
+.card img{
+    height: 160px;
+    width: 220px;
+}
 
-/* Example media query for adjusting styles on smaller screens */
 @media screen and (max-width: 768px) {
     .header {
-        padding: 10px 5%; /* Adjust padding for smaller screens */
+        padding: 10px 5%; 
     }
 }
 .head-1{
@@ -61,46 +63,49 @@ img {
 .card-haed{
     color: #f68b08;
 }
-
-
-/* animation */
-
-.reveal{
+.reveal {
     position: relative;
     transform: translateY(120px);
     opacity: 0;
     transition: 1s ease;
 }
-
-.reveal.active{
+.reveal.active {
     transform: translateY(0);
     opacity: 1;
-
 }
-/* Initial positioning before animation */
 .animate-left {
     transform: translateX(-100vw);
     transition: transform 1.5s ease;
+    opacity: 0;
 }
 
 .animate-right {
     transform: translateX(100vw);
     transition: transform 1.5s ease;
+    opacity: 0;
 }
 
 .animate-left.active {
     transform: translateX(0);
+    opacity: 1;
 }
 
 .animate-right.active {
     transform: translateX(0);
+    opacity: 1;
 }
 @media screen and (max-width: 768px) {
     .header {
         padding: 10px 5%;
     }
     .head-1 {
-        margin-top: 25vh; /* Adjust as needed for smaller screens */
+        margin-top: 25vh;
     }
-    /* Additional responsive styles */
+    
+    .animate-left,
+    .animate-right {
+        transform: none;
+        opacity: 1;
+        transition: none;
+    }
 }
