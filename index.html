@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css"> 
 </head>
@@ -11,11 +11,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
           <a class="navbar-brand" href="#"><h3><span style="color:#42f5ec;">GAMMA</span> COMPUTERS</h3></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse fs-5" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item mx-3">
                     <a class="nav-link active" aria-current="page" href="#home">Home</a>
                 </li>
@@ -36,6 +33,7 @@
         </div>
     </nav>
 
+
     <section id="home">
         <div class="container-fluid m-0 p-0">
             <div class="header">
@@ -51,10 +49,10 @@
         <h1 class="text-center m-2 head-text">About Us</h1>
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 animate-left ">
+                <div class="col-lg-6 block">
                     <img src="./images/image-1.png" class="img-fluid">
                 </div>
-                <div class="col-lg-6 p-3 animate-right">
+                <div class="col-lg-6 p-3 block">
                     <p class="h6"></p>At Gamma Computers, we specialize in providing expert computer repair services tailored to meet your specific needs. With a dedicated team of certified technicians, we are committed to delivering reliable solutions that ensure your devices operate smoothly and securely. Whether it's troubleshooting hardware issues, optimizing software performance, or securing your data, we strive to exceed your expectations with every repair. Count on us to keep your technology running at its best, so you can stay focused on what matters most to you.</p>
                 </div>
             </div>
@@ -65,21 +63,21 @@
         <div class="container-fluid " id="services">
             <div class="grid">
                 <div class="row d-flex justify-content-around reveal">
-                    <div class="card col-lg-3 bg-dark mb-3">
+                    <div class="card col-lg-3 bg-dark mb-3 p-2">
                         <img src="./images/services-2.png">
                         <div class="card-body">
                             <p class="h3 text-center card-haed">HARDWARE REPAIR</p>
                             <p>Our skilled technicians offer expert hardware repair, ensuring your devices operate at peak performance.Choose our reliable hardware repair solutions for seamless device functionality and reliability.</p>
                         </div>
                     </div>
-                    <div class="card col-lg-3 p-3 m-1 bg-dark mb-3">
+                    <div class="card col-lg-3 p-2 m-1 bg-dark mb-3">
                         <img src="./images/services-3.png">
                         <div class="card-body">
                             <p class="h3 text-center card-haed">SOFTWARE REPAIR</p>
                         <p>Rely on our team for fast, reliable software repair that safeguards your devices and data, ensuring peace of mind with every solution.Our team provides swift software repair to keep your devices running smoothly and securely.</p>
                         </div>
                     </div>
-                    <div class="card col-lg-3 p-3 m-1 bg-dark">
+                    <div class="card col-lg-3 p-2 m-1 bg-dark">
                         <img src="./images/services-4.png">
                         <div class="card-body">
                             <p class="h3 text-center card-haed">MALWARE REPAIR</p>
@@ -95,7 +93,7 @@
         <div class="container-fluid">
             <div class="row justify-content-around reveal">
                 <div class="col-lg-3 col-sm-12 mb-3">
-                    <div class="card bg-dark">
+                    <div class="card bg-dark p-2">
                         <div class="card-image-top">
                             <img src="./images/laptop-1.webp" alt="Product 1">
                         </div>
@@ -114,7 +112,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-12 mb-3">
-                    <div class="card bg-dark">
+                    <div class="card bg-dark p-2">
                         <div class="card-image-top">
                             <img src="./images/laptop-2.jpg" alt="Product 2">
                         </div>
@@ -127,15 +125,14 @@
                                 Hard Disk Size	1 TB <br>
                                 CPU Model	Apple M2 Ultra <br>
                                 RAM Memory Installed Size	48 GB <br>
-                                Graphics Card Integrated
-                                2 Years service warranty
+                                
                                 </p>
                             <h3 class="card-link btn btn-primary">Buy</h3>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-12 mb-3">
-                    <div class="card shadow bg-dark">
+                    <div class="card shadow bg-dark p-2">
                         <div class="card-image-top">
                             <img src="./images/laptop-3.jpg" alt="Product 3">
                         </div>
@@ -148,7 +145,7 @@
                                 Hard Disk Size	512 GB<br>
                                 CPU Model	Intel Core i5<br>
                                 RAM Memory Installed Size	16 GB<br>
-                                Operating System	Windows 11 Home<br>
+                                Operating System<br>
                                 </p>
                             <h3 class="card-link btn btn-primary">Buy</h3>
                         </div>
@@ -201,6 +198,7 @@
             </div>
         </footer>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>
 </html>
