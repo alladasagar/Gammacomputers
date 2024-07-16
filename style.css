@@ -14,90 +14,34 @@
     padding: 10px 8%; 
     position: relative;
 }
+
 .navbar-nav a:hover {
     color: #42f5ec !important;
 }
+
 body {
     background-color: black;
     color: white;
 }
-.head-text{
+
+.head-text {
     color: #ffd100;
     font-weight: 600;
     cursor: pointer;
     transition: 2s ease;
 }
+
 img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
 }
-.card img{
-    width: 100%;
-    height: auto;
+
+.card img {
+    height: 160px;
+    width: 220px;
 }
 
-/* Adjust card size for smaller screens */
-@media screen and (max-width: 768px) {
-    .card img{
-        height: auto;
-    }
-    .header {
-        padding: 10px 5%; 
-    }
-}
-.head-1{
-    color: #42f5ec;
-    margin-top: 35vh;
-}
-.head-2{
-    color: white;
-    opacity: 1;
-    cursor: pointer;
-    transition: 2s ease;
-}
-.head-2:hover{
-    color: hwb(73 45% 11%);
-}
-.card-body{
-    color: #f695c3;
-    border-radius: 10px;
-    margin-top: 2px;
-}
-.card-haed{
-    color: #f68b08;
-}
-.reveal {
-    position: relative;
-    transform: translateY(120px);
-    opacity: 0;
-    transition: 1s ease;
-}
-.reveal.active {
-    transform: translateY(0);
-    opacity: 1;
-}
-.animate-left {
-    transform: translateX(-100vw);
-    transition: transform 1.5s ease;
-    opacity: 0;
-}
-
-.animate-right {
-    transform: translateX(100vw);
-    transition: transform 1.5s ease;
-    opacity: 0;
-}
-
-.animate-left.active {
-    transform: translateX(0);
-    opacity: 1;
-}
-
-.animate-right.active {
-    transform: translateX(0);
-    opacity: 1;
-}
 @media screen and (max-width: 768px) {
     .header {
         padding: 10px 5%;
@@ -105,7 +49,77 @@ img {
     .head-1 {
         margin-top: 25vh;
     }
-    
+}
+
+.head-1 {
+    color: #42f5ec;
+    margin-top: 35vh;
+}
+
+.head-2 {
+    color: white;
+    opacity: 1;
+    cursor: pointer;
+    transition: 2s ease;
+}
+
+.head-2:hover {
+    color: hwb(73 45% 11%);
+}
+
+.card-body {
+    color: #f695c3;
+    border-radius: 10px;
+    margin-top: 2px;
+}
+
+.card-haed {
+    color: #f68b08;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(120px);
+    opacity: 0;
+    transition: 1s ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.block {
+    animation: appear ease;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+@media screen and (min-width: 769px) {
+    .card img {
+        height: 200px; /* Adjust height for larger screens */
+        width: 400px; /* Adjust width for larger screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 10px 5%;
+    }
+    .head-1 {
+        margin-top: 25vh;
+    }
     .animate-left,
     .animate-right {
         transform: none;
